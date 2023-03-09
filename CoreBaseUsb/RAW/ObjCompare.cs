@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-
+using CoreBaseUsb.Utilities;
 namespace CoreBaseUsb.RAW
 {
     public class ObjCompare
@@ -29,7 +29,7 @@ namespace CoreBaseUsb.RAW
         public ObjCompare()
         {
             Class3.vd4OXo2zYFEgU();
-            base..ctor();
+            //base..ctor();
         }
 
         // Token: 0x04000011 RID: 17

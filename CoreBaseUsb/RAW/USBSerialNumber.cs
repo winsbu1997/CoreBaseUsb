@@ -3,6 +3,7 @@ using System.Management;
 using System.Runtime.InteropServices;
 using System.Text;
 using Microsoft.Win32;
+using CoreBaseUsb.Utilities;
 
 namespace CoreBaseUsb.RAW
 {
@@ -132,7 +133,7 @@ namespace CoreBaseUsb.RAW
         public USBSerialNumber()
         {
             Class3.vd4OXo2zYFEgU();
-            base..ctor();
+            //base..ctor();
         }
 
         // Token: 0x04000026 RID: 38

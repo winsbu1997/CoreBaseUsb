@@ -3,7 +3,7 @@ using System.Globalization;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-
+using CoreBaseUsb.Utilities;
 
 namespace CoreBaseUsb.RAW
 {
@@ -521,7 +521,7 @@ namespace CoreBaseUsb.RAW
         public UMD5()
         {
             Class3.vd4OXo2zYFEgU();
-            base..ctor();
+            //base..ctor();
         }
 
         // Token: 0x06000039 RID: 57 RVA: 0x000022F1 File Offset: 0x000004F1
