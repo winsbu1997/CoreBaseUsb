@@ -79,12 +79,101 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\AddDriveDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddDriveDialog.Designer.cs">
+      <DependentUpon>AddDriveDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DirectoryNode.cs" />
+    <Compile Include="GUI\DirFilePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\DirFilePanel.Designer.cs">
+      <DependentUpon>DirFilePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FilePatternDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FilePatternDialog.Designer.cs">
+      <DependentUpon>FilePatternDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmCopying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmCopying.Designer.cs">
+      <DependentUpon>frmCopying.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmLogins.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmLogins.Designer.cs">
       <DependentUpon>frmLogins.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmProperties.Designer.cs">
+      <DependentUpon>frmProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmStatusBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmStatusBar.Designer.cs">
+      <DependentUpon>frmStatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\HelpBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\HelpBox.Designer.cs">
+      <DependentUpon>HelpBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\KeyBoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KeyBoad.Designer.cs">
+      <DependentUpon>KeyBoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ListViewItemFile.cs" />
+    <Compile Include="GUI\LTOOLSnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LTOOLSnet.Designer.cs">
+      <DependentUpon>LTOOLSnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ModifyDosDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ModifyDosDialog.Designer.cs">
+      <DependentUpon>ModifyDosDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ModifyLinuxDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ModifyLinuxDialog.Designer.cs">
+      <DependentUpon>ModifyLinuxDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MyDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MyDebug.Designer.cs">
+      <DependentUpon>MyDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PartitionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PartitionsDialog.Designer.cs">
+      <DependentUpon>PartitionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\PlatformInvokeKernel32.cs" />
+    <Compile Include="GUI\RemoteBoxDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\RemoteBoxDialog.Designer.cs">
+      <DependentUpon>RemoteBoxDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\RemoteHost.cs" />
+    <Compile Include="GUI\ULDir.cs" />
     <Compile Include="LTOOLSnet.Properties\Resources.cs" />
     <Compile Include="LTOOLSnet.Properties\Settings.cs" />
     <Compile Include="LTOOLSnet\clsAES%28%29.cs" />
@@ -102,6 +191,33 @@
     <Compile Include="Utilities\Class1.cs" />
     <Compile Include="Utilities\Class2.cs" />
     <Compile Include="Utilities\Class3.cs" />
+    <EmbeddedResource Include="GUI\AddDriveDialog.resx">
+      <DependentUpon>AddDriveDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FilePatternDialog.resx">
+      <DependentUpon>FilePatternDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmStatusBar.resx">
+      <DependentUpon>frmStatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\HelpBox.resx">
+      <DependentUpon>HelpBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KeyBoad.resx">
+      <DependentUpon>KeyBoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModifyDosDialog.resx">
+      <DependentUpon>ModifyDosDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ModifyLinuxDialog.resx">
+      <DependentUpon>ModifyLinuxDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MyDebug.resx">
+      <DependentUpon>MyDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PartitionsDialog.resx">
+      <DependentUpon>PartitionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

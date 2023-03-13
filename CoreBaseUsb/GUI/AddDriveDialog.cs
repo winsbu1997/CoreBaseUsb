@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +18,6 @@ namespace CoreBaseUsb.GUI
         {
             Class3.vd4OXo2zYFEgU();
             this.container_0 = null;
-            base..ctor();
             this.InitializeComponent();
             if (isLinux)
             {

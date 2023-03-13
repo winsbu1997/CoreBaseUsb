@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreBaseUsb.Utilities;
+using System;
 
 namespace CoreBaseUsb.GUI
 {
@@ -35,7 +36,6 @@ namespace CoreBaseUsb.GUI
         public RemoteHost(string host, int port)
         {
             Class3.vd4OXo2zYFEgU();
-            base..ctor();
             this.Host = host;
             this.Port = port;
         }
