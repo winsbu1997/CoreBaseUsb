@@ -17,35 +17,16 @@ namespace CoreBaseUsb.GUI
         }
 
         // Token: 0x060000EA RID: 234 RVA: 0x00011B68 File Offset: 0x0000FD68
-        [STAThread]
-        public static void Main(string[] args)
-        {
-            string text = "*.txt";
-            FilePatternDialog filePatternDialog = new FilePatternDialog(text, false);
-            if (filePatternDialog.ShowDialog() == DialogResult.OK)
-            {
-                MessageBox.Show("FilePattern:\n" + filePatternDialog.FilePattern + "\nOK clicked");
-            }
-            else
-            {
-                MessageBox.Show("FilePattern:\n" + text + "\nCancel clicked");
-            }
-        }
+       
 
         // Token: 0x060000EB RID: 235 RVA: 0x000025FC File Offset: 0x000007FC
         private void buttonReset_Click(object sender, EventArgs e)
         {
             this.textBoxFilePattern.Text = "*";
         }
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -55,12 +36,6 @@ namespace CoreBaseUsb.GUI
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.buttonOk = new System.Windows.Forms.Button();
@@ -138,6 +113,20 @@ namespace CoreBaseUsb.GUI
 
         }
 
+        [STAThread]
+        public static void Main(string[] args)
+        {
+            string text = "*.txt";
+            FilePatternDialog filePatternDialog = new FilePatternDialog(text, false);
+            if (filePatternDialog.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show("FilePattern:\n" + filePatternDialog.FilePattern + "\nOK clicked");
+            }
+            else
+            {
+                MessageBox.Show("FilePattern:\n" + text + "\nCancel clicked");
+            }
+        }
         // Token: 0x040000A0 RID: 160
         private Button buttonOk;
 
@@ -155,6 +144,5 @@ namespace CoreBaseUsb.GUI
 
         // Token: 0x040000A5 RID: 165
         private Container container_0;
-        #endregion
     }
 }

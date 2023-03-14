@@ -533,8 +533,8 @@ namespace CoreBaseUsb.GUI
                                     return;
                                 }
                                 ArrayList arrayList = DCOPY.TraverseDOSTree(listViewItemFile.FullFilePath);
-                                using (IEnumerator enumerator2 = arrayList.GetEnumerator())
-                                {
+                                try{
+                                    IEnumerator enumerator2 = arrayList.GetEnumerator();
                                     while (enumerator2.MoveNext())
                                     {
                                         object obj2 = enumerator2.Current;
@@ -548,11 +548,12 @@ namespace CoreBaseUsb.GUI
                                     }
                                     continue;
                                 }
+                                catch { }
                             }
                             string root = listViewItemFile.Directory + UMD5.ConvertStringToHex(listViewItemFile.FileName, Encoding.Unicode) + "/";
                             ArrayList filesLinuxTree = this.linuxFilePanel.GetFilesLinuxTree(root);
-                            using (IEnumerator enumerator2 = filesLinuxTree.GetEnumerator())
-                            {
+                            try{
+                                IEnumerator enumerator2 = filesLinuxTree.GetEnumerator();                           
                                 while (enumerator2.MoveNext())
                                 {
                                     object obj3 = enumerator2.Current;
@@ -568,6 +569,7 @@ namespace CoreBaseUsb.GUI
                                 }
                                 continue;
                             }
+                            catch { }
                         }
                         if (listViewItemFile.IsLink)
                         {
@@ -646,8 +648,19 @@ namespace CoreBaseUsb.GUI
                 ListView.SelectedListViewItemCollection selectedListViewItemFile = this.dosFilePanel.GetSelectedListViewItemFile();
                 if (selectedListViewItemFile != null)
                 {
-                    using (IEnumerator enumerator = selectedListViewItemFile.GetEnumerator())
+                    //using (IEnumerator enumerator = selectedListViewItemFile.GetEnumerator())
+                    //{
+                    //    while (enumerator.MoveNext())
+                    //    {
+                    //        object obj = enumerator.Current;
+                    //        ListViewItemFile item = (ListViewItemFile)obj;
+                    //        this.dosFilePanel.StartDosApplication(item, false);
+                    //    }
+                    //    return;
+                    //}
+                    try
                     {
+                        IEnumerator enumerator = selectedListViewItemFile.GetEnumerator();
                         while (enumerator.MoveNext())
                         {
                             object obj = enumerator.Current;
@@ -656,6 +669,7 @@ namespace CoreBaseUsb.GUI
                         }
                         return;
                     }
+                    catch { }
                 }
                 MessageBox.Show(text, caption, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
@@ -664,8 +678,9 @@ namespace CoreBaseUsb.GUI
                 ListView.SelectedListViewItemCollection selectedListViewItemFile = this.linuxFilePanel.GetSelectedListViewItemFile();
                 if (selectedListViewItemFile != null)
                 {
-                    using (IEnumerator enumerator = selectedListViewItemFile.GetEnumerator())
-                    {
+                    try{
+                        IEnumerator enumerator = selectedListViewItemFile.GetEnumerator();
+                    
                         while (enumerator.MoveNext())
                         {
                             object obj2 = enumerator.Current;
@@ -674,6 +689,7 @@ namespace CoreBaseUsb.GUI
                         }
                         return;
                     }
+                    catch{ }
                 }
                 MessageBox.Show(text, caption, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }

@@ -1781,7 +1781,7 @@ namespace CoreBaseUsb.GUI
                             "---   "
                         }));
                         arrayList.RemoveAt(i);
-                    IL_1CA:
+    IL_1CA:
                         i++;
                         goto IL_1D0;
                     }
@@ -4405,8 +4405,8 @@ namespace CoreBaseUsb.GUI
                                     return;
                                 }
                                 ArrayList arrayList6 = DCOPY.TraverseDOSTree(((ListViewItemFile)((ListView)sender).SelectedItems[i]).FullFilePath);
-                                using (IEnumerator enumerator = arrayList6.GetEnumerator())
-                                {
+                                try{
+                                    IEnumerator enumerator = arrayList6.GetEnumerator();
                                     while (enumerator.MoveNext())
                                     {
                                         object obj = enumerator.Current;
@@ -4420,11 +4420,12 @@ namespace CoreBaseUsb.GUI
                                     }
                                     goto IL_4C2;
                                 }
+                                catch { }
                             }
                             string root = ((ListViewItemFile)((ListView)sender).SelectedItems[i]).Directory + UMD5.ConvertStringToHex(((ListViewItemFile)((ListView)sender).SelectedItems[i]).FileName, Encoding.Unicode) + "/";
                             ArrayList filesLinuxTree = this.GetFilesLinuxTree(root);
-                            using (IEnumerator enumerator = filesLinuxTree.GetEnumerator())
-                            {
+                            try{
+                                IEnumerator enumerator = filesLinuxTree.GetEnumerator();                          
                                 while (enumerator.MoveNext())
                                 {
                                     object obj2 = enumerator.Current;
@@ -4439,6 +4440,7 @@ namespace CoreBaseUsb.GUI
                                 }
                                 goto IL_4C2;
                             }
+                            catch { }
                             goto IL_391;
                         }
                         goto IL_391;
@@ -4586,8 +4588,9 @@ namespace CoreBaseUsb.GUI
             if (e.Control && e.KeyCode == Keys.A)
             {
                 ListView.ListViewItemCollection items = this.listView.Items;
-                using (IEnumerator enumerator = items.GetEnumerator())
-                {
+                try{
+                    IEnumerator enumerator = items.GetEnumerator();
+              
                     while (enumerator.MoveNext())
                     {
                         object obj = enumerator.Current;
@@ -4596,6 +4599,7 @@ namespace CoreBaseUsb.GUI
                     }
                     return;
                 }
+                catch { }
             }
             if (e.KeyCode == Keys.Delete)
             {
@@ -5299,8 +5303,8 @@ namespace CoreBaseUsb.GUI
                         ListViewItemFile value = (ListViewItemFile)obj;
                         this.listView.Items.Add(value);
                     }
-                    using (IEnumerator enumerator = arrayList_1.GetEnumerator())
-                    {
+                    try{
+                        IEnumerator enumerator = arrayList_1.GetEnumerator();
                         while (enumerator.MoveNext())
                         {
                             object obj2 = enumerator.Current;
@@ -5309,6 +5313,7 @@ namespace CoreBaseUsb.GUI
                         }
                         goto IL_25A;
                     }
+                    catch { }
                 }
                 if (this.sortOrder_0 == SortOrder.Descending)
                 {
@@ -5654,8 +5659,8 @@ namespace CoreBaseUsb.GUI
                 {
                     return;
                 }
-                using (IEnumerator enumerator = selectedListViewItemFile.GetEnumerator())
-                {
+                try {
+                    IEnumerator enumerator = selectedListViewItemFile.GetEnumerator();
                     while (enumerator.MoveNext())
                     {
                         object obj = enumerator.Current;
@@ -5710,6 +5715,7 @@ namespace CoreBaseUsb.GUI
                     }
                     return;
                 }
+                catch { }
             }
             selectedListViewItemFile = this.GetSelectedListViewItemFile();
             if (selectedListViewItemFile.Count > 1)

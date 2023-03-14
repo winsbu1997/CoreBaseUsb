@@ -5,6 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
 using CoreBaseUsb.GUI;
+using CoreBaseUsb.RAW;
 using CoreBaseUsb.Utilities;
 
 namespace CoreBaseUsb.GUI

@@ -3,7 +3,7 @@ using System.Collections;
 using CoreBaseUsb.Utilities;
 namespace CoreBaseUsb.RAW
 {
-    public class ObjCompare
+    public class ObjCompare : IComparer
     {
         public ObjCompare.ComparisonType ComparisonMethod
         {
