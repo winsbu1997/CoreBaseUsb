@@ -197,6 +197,9 @@
     <EmbeddedResource Include="GUI\FilePatternDialog.resx">
       <DependentUpon>FilePatternDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmLogins.resx">
+      <DependentUpon>frmLogins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmStatusBar.resx">
       <DependentUpon>frmStatusBar.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,13 +240,36 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\btlKeyboad.Image" />
+    <None Include="Resources\btlSearch.Image" />
+    <None Include="Resources\cmdExit.Image" />
+    <None Include="Resources\cmdLogin.Image" />
+    <None Include="Resources\cutToolStripMenuItem.Image" />
+    <None Include="Resources\formatContextMenuItem.Image" />
+    <None Include="Resources\lblUSB.Image" />
+    <None Include="Resources\modifyToolStripMenuItem.Image" />
+    <None Include="Resources\modifyToolStripMenuItem1.Image" />
+    <None Include="Resources\newToolStripMenuItem.Image" />
+    <None Include="Resources\pasteToolStripMenuItem.Image" />
+    <None Include="Resources\picDOS.Image" />
+    <None Include="Resources\picHide.Image" />
+    <None Include="Resources\pictureBox.Image" />
+    <None Include="Resources\pictureBox2.Image" />
+    <None Include="Resources\picUnHide.Image" />
+    <None Include="Resources\picUSB.Image" />
+    <None Include="Resources\refreshToolStripMenuItem.Image" />
+    <None Include="Resources\toolStripMenuItem1.Image" />
+    <None Include="Resources\toolStripMenuItem12.Image" />
+    <None Include="Resources\toolStripMenuItem13.Image" />
+    <None Include="Resources\toolStripMenuItem14.Image" />
+    <None Include="Resources\toolStripMenuItem6.Image" />
+    <None Include="Resources\toolStripMenuItem7.Image" />
+    <None Include="Resources\viewToolStripMenuItem.Image" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <COMReference Include="Shell32">
       <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>

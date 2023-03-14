@@ -1941,25 +1941,25 @@ namespace CoreBaseUsb.GUI
         }
 
         // Token: 0x060001A6 RID: 422 RVA: 0x0001A2FC File Offset: 0x000184FC
-        [STAThread]
-        private static void Main(string[] args)
-        {
-            int num = args.Length;
-            for (int i = 0; i < num; i++)
-            {
-                if (args[i].Substring(0, 2).ToLower() == "-d")
-                {
-                    LTOOLSnet.Debug = true;
-                }
-            }
-            LTOOLSnet.fLogin = new frmLogins();
-            LTOOLSnet.fLogin.ShowDialog();
-            LTOOLSnet.IsLogined = LTOOLSnet.fLogin.IsLoginOK;
-            if (LTOOLSnet.bool_7)
-            {
-                Application.Run(new LTOOLSnet());
-            }
-        }
+        //[STAThread]
+        //private static void Main(string[] args)
+        //{
+        //    int num = args.Length;
+        //    for (int i = 0; i < num; i++)
+        //    {
+        //        if (args[i].Substring(0, 2).ToLower() == "-d")
+        //        {
+        //            LTOOLSnet.Debug = true;
+        //        }
+        //    }
+        //    LTOOLSnet.fLogin = new frmLogins();
+        //    LTOOLSnet.fLogin.ShowDialog();
+        //    LTOOLSnet.IsLogined = LTOOLSnet.fLogin.IsLoginOK;
+        //    if (LTOOLSnet.bool_7)
+        //    {
+        //        Application.Run(new LTOOLSnet());
+        //    }
+        //}
 
         // Token: 0x060001A7 RID: 423 RVA: 0x00002C3F File Offset: 0x00000E3F
         private void timer_0_Tick(object sender, EventArgs e)

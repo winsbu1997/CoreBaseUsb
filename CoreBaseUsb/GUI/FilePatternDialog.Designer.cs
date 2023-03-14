@@ -113,20 +113,20 @@ namespace CoreBaseUsb.GUI
 
         }
 
-        [STAThread]
-        public static void Main(string[] args)
-        {
-            string text = "*.txt";
-            FilePatternDialog filePatternDialog = new FilePatternDialog(text, false);
-            if (filePatternDialog.ShowDialog() == DialogResult.OK)
-            {
-                MessageBox.Show("FilePattern:\n" + filePatternDialog.FilePattern + "\nOK clicked");
-            }
-            else
-            {
-                MessageBox.Show("FilePattern:\n" + text + "\nCancel clicked");
-            }
-        }
+        //[STAThread]
+        //public static void Main(string[] args)
+        //{
+        //    string text = "*.txt";
+        //    FilePatternDialog filePatternDialog = new FilePatternDialog(text, false);
+        //    if (filePatternDialog.ShowDialog() == DialogResult.OK)
+        //    {
+        //        MessageBox.Show("FilePattern:\n" + filePatternDialog.FilePattern + "\nOK clicked");
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("FilePattern:\n" + text + "\nCancel clicked");
+        //    }
+        //}
         // Token: 0x040000A0 RID: 160
         private Button buttonOk;
 

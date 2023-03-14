@@ -1781,12 +1781,12 @@ namespace CoreBaseUsb.GUI
                             "---   "
                         }));
                         arrayList.RemoveAt(i);
-    IL_1CA:
+                    IL_1CA:
                         i++;
                         goto IL_1D0;
                     }
                 }
-                goto IL_1CA;
+                //goto IL_1CA;
             }
             return arrayList;
         }

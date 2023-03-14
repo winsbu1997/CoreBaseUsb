@@ -303,11 +303,6 @@ namespace CoreBaseUsb.GUI
             }
         }
 
-        // Token: 0x06000113 RID: 275 RVA: 0x000022A9 File Offset: 0x000004A9
-        private void keyboardcontrol1_Load(object sender, EventArgs e)
-        {
-        }
-
         // Token: 0x06000114 RID: 276 RVA: 0x0000283C File Offset: 0x00000A3C
         private void method_2(object sender, KeyboardEventArgs e)
         {
@@ -316,16 +311,6 @@ namespace CoreBaseUsb.GUI
                 this.txtPass.Focus();
             }
             SendKeys.Send(e.KeyboardKeyPressed);
-        }
-
-        // Token: 0x06000115 RID: 277 RVA: 0x000022A9 File Offset: 0x000004A9
-        private void txtPass_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        // Token: 0x06000116 RID: 278 RVA: 0x000022A9 File Offset: 0x000004A9
-        private void method_3(object sender, EventArgs e)
-        {
         }
 
         // Token: 0x06000117 RID: 279 RVA: 0x000133F0 File Offset: 0x000115F0
@@ -621,26 +606,6 @@ namespace CoreBaseUsb.GUI
             }
         }
 
-        // Token: 0x06000122 RID: 290 RVA: 0x000022A9 File Offset: 0x000004A9
-        private void method_9(object sender, EventArgs e)
-        {
-        }
-
-        // Token: 0x06000123 RID: 291 RVA: 0x000022A9 File Offset: 0x000004A9
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        // Token: 0x06000124 RID: 292 RVA: 0x000022A9 File Offset: 0x000004A9
-        private void method_10(object sender, EventArgs e)
-        {
-        }
-
-        // Token: 0x06000125 RID: 293 RVA: 0x000022A9 File Offset: 0x000004A9
-        private void method_11(object sender, EventArgs e)
-        {
-        }
-
         // Token: 0x06000126 RID: 294 RVA: 0x00002865 File Offset: 0x00000A65
         protected override void Dispose(bool disposing)
         {
@@ -654,124 +619,154 @@ namespace CoreBaseUsb.GUI
         // Token: 0x06000127 RID: 295 RVA: 0x00013C48 File Offset: 0x00011E48
         private void InitializeComponent()
         {
-            ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(frmLogins));
-            this.grpLogin = new GroupBox();
-            this.cmdLogin = new Button();
-            this.cmdChange = new Button();
-            this.textBox3 = new TextBox();
-            this.label2 = new Label();
-            this.txtPass = new TextBox();
-            this.btlKeyboad = new Button();
-            this.cmdExit = new Button();
-            this.grpDoiMK = new GroupBox();
-            this.label1 = new Label();
-            this.txtPass3 = new TextBox();
-            this.cmdClose = new Button();
-            this.cmdOK1 = new Button();
-            this.Label8 = new Label();
-            this.Label7 = new Label();
-            this.txtPass2 = new TextBox();
-            this.txtPass1 = new TextBox();
-            this.txtKeys = new RichTextBox();
-            this.txtUSB = new RichTextBox();
-            this.comboBox_0 = new ComboBox();
-            this.picUnHide = new PictureBox();
-            this.picHide = new PictureBox();
-            this.textBox2 = new TextBox();
-            this.textBox1 = new TextBox();
-            this.groupBox1 = new GroupBox();
-            this.keyboardcontrol1 = new Keyboardcontrol();
-            this.pictureBox2 = new PictureBox();
+            this.grpLogin = new System.Windows.Forms.GroupBox();
+            this.cmdLogin = new System.Windows.Forms.Button();
+            this.cmdChange = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.btlKeyboad = new System.Windows.Forms.Button();
+            this.cmdExit = new System.Windows.Forms.Button();
+            this.grpDoiMK = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPass3 = new System.Windows.Forms.TextBox();
+            this.cmdClose = new System.Windows.Forms.Button();
+            this.cmdOK1 = new System.Windows.Forms.Button();
+            this.Label8 = new System.Windows.Forms.Label();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.txtPass2 = new System.Windows.Forms.TextBox();
+            this.txtPass1 = new System.Windows.Forms.TextBox();
+            this.txtKeys = new System.Windows.Forms.RichTextBox();
+            this.txtUSB = new System.Windows.Forms.RichTextBox();
+            this.comboBox_0 = new System.Windows.Forms.ComboBox();
+            this.picUnHide = new System.Windows.Forms.PictureBox();
+            this.picHide = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.keyboardcontrol1 = new KeyboardClassLibrary.Keyboardcontrol();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.grpLogin.SuspendLayout();
             this.grpDoiMK.SuspendLayout();
-            ((ISupportInitialize)this.picUnHide).BeginInit();
-            ((ISupportInitialize)this.picHide).BeginInit();
-            ((ISupportInitialize)this.pictureBox2).BeginInit();
-            base.SuspendLayout();
-            this.grpLogin.BackColor = Color.DarkSeaGreen;
+            ((System.ComponentModel.ISupportInitialize)(this.picUnHide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // grpLogin
+            // 
+            this.grpLogin.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.grpLogin.Controls.Add(this.cmdLogin);
             this.grpLogin.Controls.Add(this.cmdChange);
             this.grpLogin.Controls.Add(this.textBox3);
             this.grpLogin.Controls.Add(this.label2);
             this.grpLogin.Controls.Add(this.txtPass);
-            this.grpLogin.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.grpLogin.ForeColor = Color.Red;
-            this.grpLogin.Location = new Point(97, 10);
+            this.grpLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpLogin.ForeColor = System.Drawing.Color.Red;
+            this.grpLogin.Location = new System.Drawing.Point(194, 19);
+            this.grpLogin.Margin = new System.Windows.Forms.Padding(6);
             this.grpLogin.Name = "grpLogin";
-            this.grpLogin.Size = new Size(353, 119);
+            this.grpLogin.Padding = new System.Windows.Forms.Padding(6);
+            this.grpLogin.Size = new System.Drawing.Size(706, 229);
             this.grpLogin.TabIndex = 30;
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "Đăng nhập";
-            this.cmdLogin.BackColor = SystemColors.ButtonFace;
-            this.cmdLogin.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.cmdLogin.ForeColor = Color.Black;
-            this.cmdLogin.Image = (Image)componentResourceManager.GetObject("cmdLogin.Image");
-            this.cmdLogin.Location = new Point(303, 34);
+            // 
+            // cmdLogin
+            // 
+            this.cmdLogin.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.cmdLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdLogin.ForeColor = System.Drawing.Color.Black;
+            this.cmdLogin.Image = global::CoreBaseUsb.Properties.Resources.cmdLogin;
+            this.cmdLogin.Location = new System.Drawing.Point(606, 65);
+            this.cmdLogin.Margin = new System.Windows.Forms.Padding(6);
             this.cmdLogin.Name = "cmdLogin";
-            this.cmdLogin.Size = new Size(35, 27);
+            this.cmdLogin.Size = new System.Drawing.Size(70, 52);
             this.cmdLogin.TabIndex = 52;
             this.cmdLogin.UseVisualStyleBackColor = false;
-            this.cmdLogin.Click += this.cmdLogin_Click;
-            this.cmdChange.BackColor = Color.FromArgb(224, 224, 224);
-            this.cmdChange.FlatStyle = FlatStyle.Flat;
-            this.cmdChange.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.cmdChange.ForeColor = Color.Blue;
-            this.cmdChange.ImageAlign = ContentAlignment.MiddleRight;
-            this.cmdChange.Location = new Point(257, 70);
+            this.cmdLogin.Click += new System.EventHandler(this.cmdLogin_Click);
+            // 
+            // cmdChange
+            // 
+            this.cmdChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cmdChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdChange.ForeColor = System.Drawing.Color.Blue;
+            this.cmdChange.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.cmdChange.Location = new System.Drawing.Point(514, 135);
+            this.cmdChange.Margin = new System.Windows.Forms.Padding(6);
             this.cmdChange.Name = "cmdChange";
-            this.cmdChange.Size = new Size(82, 23);
+            this.cmdChange.Size = new System.Drawing.Size(164, 44);
             this.cmdChange.TabIndex = 53;
             this.cmdChange.Text = "Đổi mật khẩu";
             this.cmdChange.UseVisualStyleBackColor = false;
-            this.cmdChange.Click += this.cmdChange_Click;
-            this.textBox3.BackColor = Color.DarkSeaGreen;
-            this.textBox3.BorderStyle = BorderStyle.None;
-            this.textBox3.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.textBox3.ForeColor = Color.Blue;
-            this.textBox3.Location = new Point(6, 42);
+            this.cmdChange.Click += new System.EventHandler(this.cmdChange_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.Blue;
+            this.textBox3.Location = new System.Drawing.Point(12, 81);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(6);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new Size(65, 13);
+            this.textBox3.Size = new System.Drawing.Size(130, 25);
             this.textBox3.TabIndex = 51;
             this.textBox3.Text = "Mật khẩu";
-            this.textBox3.TextAlign = HorizontalAlignment.Center;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
             this.label2.AutoSize = true;
-            this.label2.Location = new Point(20, 61);
+            this.label2.Location = new System.Drawing.Point(40, 117);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(0, 26);
             this.label2.TabIndex = 39;
-            this.txtPass.BackColor = Color.White;
-            this.txtPass.Font = new Font("Microsoft Sans Serif", 9.75f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.txtPass.Location = new Point(73, 39);
+            // 
+            // txtPass
+            // 
+            this.txtPass.BackColor = System.Drawing.Color.White;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(146, 75);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(6);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new Size(224, 22);
+            this.txtPass.Size = new System.Drawing.Size(444, 37);
             this.txtPass.TabIndex = 1;
-            this.txtPass.TextChanged += this.txtPass_TextChanged;
-            this.txtPass.KeyPress += this.txtPass_KeyPress;
-            this.btlKeyboad.BackColor = SystemColors.ButtonFace;
-            this.btlKeyboad.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.btlKeyboad.ForeColor = Color.Black;
-            this.btlKeyboad.Image = (Image)componentResourceManager.GetObject("btlKeyboad.Image");
-            this.btlKeyboad.Location = new Point(8, 132);
+            // 
+            // btlKeyboad
+            // 
+            this.btlKeyboad.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btlKeyboad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btlKeyboad.ForeColor = System.Drawing.Color.Black;
+            this.btlKeyboad.Location = new System.Drawing.Point(16, 254);
+            this.btlKeyboad.Margin = new System.Windows.Forms.Padding(6);
             this.btlKeyboad.Name = "btlKeyboad";
-            this.btlKeyboad.Size = new Size(36, 22);
+            this.btlKeyboad.Size = new System.Drawing.Size(72, 42);
             this.btlKeyboad.TabIndex = 38;
-            this.btlKeyboad.TextAlign = ContentAlignment.MiddleRight;
+            this.btlKeyboad.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btlKeyboad.UseVisualStyleBackColor = false;
-            this.btlKeyboad.Click += this.btlKeyboad_Click;
-            this.cmdExit.BackColor = SystemColors.ButtonFace;
-            this.cmdExit.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.cmdExit.ForeColor = Color.Black;
-            this.cmdExit.Image = (Image)componentResourceManager.GetObject("cmdExit.Image");
-            this.cmdExit.ImageAlign = ContentAlignment.MiddleLeft;
-            this.cmdExit.Location = new Point(518, 8);
+            this.btlKeyboad.Click += new System.EventHandler(this.btlKeyboad_Click);
+            // 
+            // cmdExit
+            // 
+            this.cmdExit.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.cmdExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdExit.ForeColor = System.Drawing.Color.Black;
+            this.cmdExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdExit.Location = new System.Drawing.Point(1036, 15);
+            this.cmdExit.Margin = new System.Windows.Forms.Padding(6);
             this.cmdExit.Name = "cmdExit";
-            this.cmdExit.Size = new Size(32, 32);
+            this.cmdExit.Size = new System.Drawing.Size(64, 62);
             this.cmdExit.TabIndex = 3;
             this.cmdExit.UseVisualStyleBackColor = false;
             this.cmdExit.Visible = false;
-            this.cmdExit.Click += this.cmdExit_Click;
-            this.grpDoiMK.BackColor = Color.PowderBlue;
+            // 
+            // grpDoiMK
+            // 
+            this.grpDoiMK.BackColor = System.Drawing.Color.PowderBlue;
             this.grpDoiMK.Controls.Add(this.label1);
             this.grpDoiMK.Controls.Add(this.txtPass3);
             this.grpDoiMK.Controls.Add(this.cmdClose);
@@ -780,191 +775,260 @@ namespace CoreBaseUsb.GUI
             this.grpDoiMK.Controls.Add(this.Label7);
             this.grpDoiMK.Controls.Add(this.txtPass2);
             this.grpDoiMK.Controls.Add(this.txtPass1);
-            this.grpDoiMK.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.grpDoiMK.ForeColor = Color.Red;
-            this.grpDoiMK.Location = new Point(95, 10);
+            this.grpDoiMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDoiMK.ForeColor = System.Drawing.Color.Red;
+            this.grpDoiMK.Location = new System.Drawing.Point(190, 19);
+            this.grpDoiMK.Margin = new System.Windows.Forms.Padding(6);
             this.grpDoiMK.Name = "grpDoiMK";
-            this.grpDoiMK.Size = new Size(354, 119);
+            this.grpDoiMK.Padding = new System.Windows.Forms.Padding(6);
+            this.grpDoiMK.Size = new System.Drawing.Size(708, 229);
             this.grpDoiMK.TabIndex = 31;
             this.grpDoiMK.TabStop = false;
             this.grpDoiMK.Text = "Thay mật khẩu";
             this.grpDoiMK.Visible = false;
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
-            this.label1.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.label1.ForeColor = Color.Blue;
-            this.label1.Location = new Point(14, 82);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(28, 158);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(102, 26);
             this.label1.TabIndex = 30;
             this.label1.Text = "(nhập lại)";
-            this.txtPass3.BackColor = Color.White;
-            this.txtPass3.Location = new Point(79, 80);
+            // 
+            // txtPass3
+            // 
+            this.txtPass3.BackColor = System.Drawing.Color.White;
+            this.txtPass3.Location = new System.Drawing.Point(158, 154);
+            this.txtPass3.Margin = new System.Windows.Forms.Padding(6);
             this.txtPass3.Name = "txtPass3";
             this.txtPass3.PasswordChar = '*';
-            this.txtPass3.Size = new Size(176, 20);
+            this.txtPass3.Size = new System.Drawing.Size(348, 32);
             this.txtPass3.TabIndex = 7;
-            this.cmdClose.BackColor = SystemColors.ButtonFace;
-            this.cmdClose.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.cmdClose.ForeColor = Color.Black;
-            this.cmdClose.ImageAlign = ContentAlignment.MiddleLeft;
-            this.cmdClose.Location = new Point(287, 72);
+            // 
+            // cmdClose
+            // 
+            this.cmdClose.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.cmdClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdClose.ForeColor = System.Drawing.Color.Black;
+            this.cmdClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdClose.Location = new System.Drawing.Point(574, 138);
+            this.cmdClose.Margin = new System.Windows.Forms.Padding(6);
             this.cmdClose.Name = "cmdClose";
-            this.cmdClose.Size = new Size(60, 28);
+            this.cmdClose.Size = new System.Drawing.Size(120, 54);
             this.cmdClose.TabIndex = 9;
             this.cmdClose.Text = "Hủy";
             this.cmdClose.UseVisualStyleBackColor = false;
-            this.cmdClose.Click += this.cmdClose_Click;
-            this.cmdOK1.BackColor = SystemColors.ButtonFace;
-            this.cmdOK1.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.cmdOK1.ForeColor = Color.Black;
-            this.cmdOK1.ImageAlign = ContentAlignment.MiddleLeft;
-            this.cmdOK1.Location = new Point(287, 28);
+            // 
+            // cmdOK1
+            // 
+            this.cmdOK1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.cmdOK1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdOK1.ForeColor = System.Drawing.Color.Black;
+            this.cmdOK1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cmdOK1.Location = new System.Drawing.Point(574, 54);
+            this.cmdOK1.Margin = new System.Windows.Forms.Padding(6);
             this.cmdOK1.Name = "cmdOK1";
-            this.cmdOK1.Size = new Size(60, 28);
+            this.cmdOK1.Size = new System.Drawing.Size(120, 54);
             this.cmdOK1.TabIndex = 8;
             this.cmdOK1.Text = "Đồng ý";
             this.cmdOK1.UseVisualStyleBackColor = false;
-            this.cmdOK1.Click += this.cmdOK1_Click;
+            // 
+            // Label8
+            // 
             this.Label8.AutoSize = true;
-            this.Label8.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.Label8.ForeColor = Color.Blue;
-            this.Label8.Location = new Point(6, 55);
+            this.Label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label8.ForeColor = System.Drawing.Color.Blue;
+            this.Label8.Location = new System.Drawing.Point(12, 106);
+            this.Label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new Size(71, 13);
+            this.Label8.Size = new System.Drawing.Size(143, 26);
             this.Label8.TabIndex = 28;
             this.Label8.Text = "Mật khẩu mới";
+            // 
+            // Label7
+            // 
             this.Label7.AutoSize = true;
-            this.Label7.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Regular, GraphicsUnit.Point, 0);
-            this.Label7.ForeColor = Color.Blue;
-            this.Label7.Location = new Point(6, 25);
+            this.Label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label7.ForeColor = System.Drawing.Color.Blue;
+            this.Label7.Location = new System.Drawing.Point(12, 48);
+            this.Label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new Size(67, 13);
+            this.Label7.Size = new System.Drawing.Size(130, 26);
             this.Label7.TabIndex = 27;
             this.Label7.Text = "Mật khẩu cũ";
-            this.txtPass2.BackColor = Color.White;
-            this.txtPass2.Location = new Point(79, 55);
+            // 
+            // txtPass2
+            // 
+            this.txtPass2.BackColor = System.Drawing.Color.White;
+            this.txtPass2.Location = new System.Drawing.Point(158, 106);
+            this.txtPass2.Margin = new System.Windows.Forms.Padding(6);
             this.txtPass2.Name = "txtPass2";
             this.txtPass2.PasswordChar = '*';
-            this.txtPass2.Size = new Size(176, 20);
+            this.txtPass2.Size = new System.Drawing.Size(348, 32);
             this.txtPass2.TabIndex = 6;
-            this.txtPass1.BackColor = Color.FromArgb(224, 224, 224);
-            this.txtPass1.Location = new Point(79, 28);
+            // 
+            // txtPass1
+            // 
+            this.txtPass1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtPass1.Location = new System.Drawing.Point(158, 54);
+            this.txtPass1.Margin = new System.Windows.Forms.Padding(6);
             this.txtPass1.Name = "txtPass1";
             this.txtPass1.PasswordChar = '*';
-            this.txtPass1.Size = new Size(176, 20);
+            this.txtPass1.Size = new System.Drawing.Size(348, 32);
             this.txtPass1.TabIndex = 5;
-            this.txtKeys.Location = new Point(154, 231);
+            // 
+            // txtKeys
+            // 
+            this.txtKeys.Location = new System.Drawing.Point(308, 444);
+            this.txtKeys.Margin = new System.Windows.Forms.Padding(6);
             this.txtKeys.Name = "txtKeys";
-            this.txtKeys.Size = new Size(163, 20);
+            this.txtKeys.Size = new System.Drawing.Size(322, 35);
             this.txtKeys.TabIndex = 34;
             this.txtKeys.Text = "";
             this.txtKeys.Visible = false;
-            this.txtUSB.Location = new Point(155, 212);
+            // 
+            // txtUSB
+            // 
+            this.txtUSB.Location = new System.Drawing.Point(310, 408);
+            this.txtUSB.Margin = new System.Windows.Forms.Padding(6);
             this.txtUSB.Name = "txtUSB";
-            this.txtUSB.Size = new Size(163, 20);
+            this.txtUSB.Size = new System.Drawing.Size(322, 35);
             this.txtUSB.TabIndex = 35;
             this.txtUSB.Text = "";
             this.txtUSB.Visible = false;
+            // 
+            // comboBox_0
+            // 
             this.comboBox_0.FormattingEnabled = true;
-            this.comboBox_0.Location = new Point(460, 3);
-            this.comboBox_0.Name = "cboListUSB";
-            this.comboBox_0.Size = new Size(18, 21);
+            this.comboBox_0.Location = new System.Drawing.Point(920, 6);
+            this.comboBox_0.Margin = new System.Windows.Forms.Padding(6);
+            this.comboBox_0.Name = "comboBox_0";
+            this.comboBox_0.Size = new System.Drawing.Size(32, 33);
             this.comboBox_0.TabIndex = 36;
             this.comboBox_0.Visible = false;
-            this.picUnHide.Image = (Image)componentResourceManager.GetObject("picUnHide.Image");
-            this.picUnHide.Location = new Point(244, 143);
+            // 
+            // picUnHide
+            // 
+            this.picUnHide.Location = new System.Drawing.Point(488, 275);
+            this.picUnHide.Margin = new System.Windows.Forms.Padding(6);
             this.picUnHide.Name = "picUnHide";
-            this.picUnHide.Size = new Size(37, 16);
-            this.picUnHide.SizeMode = PictureBoxSizeMode.AutoSize;
+            this.picUnHide.Size = new System.Drawing.Size(37, 16);
+            this.picUnHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picUnHide.TabIndex = 40;
             this.picUnHide.TabStop = false;
             this.picUnHide.Visible = false;
-            this.picUnHide.Click += this.picUnHide_Click;
-            this.picHide.Image = (Image)componentResourceManager.GetObject("picHide.Image");
-            this.picHide.Location = new Point(202, 142);
+            // 
+            // picHide
+            // 
+            this.picHide.Location = new System.Drawing.Point(404, 273);
+            this.picHide.Margin = new System.Windows.Forms.Padding(6);
             this.picHide.Name = "picHide";
-            this.picHide.Size = new Size(37, 16);
-            this.picHide.SizeMode = PictureBoxSizeMode.AutoSize;
+            this.picHide.Size = new System.Drawing.Size(37, 16);
+            this.picHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picHide.TabIndex = 41;
             this.picHide.TabStop = false;
             this.picHide.Visible = false;
-            this.textBox2.BackColor = Color.DarkSeaGreen;
-            this.textBox2.BorderStyle = BorderStyle.None;
-            this.textBox2.Font = new Font("Microsoft Sans Serif", 9.75f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.textBox2.ForeColor = Color.Red;
-            this.textBox2.Location = new Point(199, 140);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.Red;
+            this.textBox2.Location = new System.Drawing.Point(398, 269);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(6);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new Size(103, 15);
+            this.textBox2.Size = new System.Drawing.Size(206, 30);
             this.textBox2.TabIndex = 49;
             this.textBox2.Text = "USB - AT";
-            this.textBox2.TextAlign = HorizontalAlignment.Center;
-            this.textBox2.TextChanged += this.textBox2_TextChanged;
-            this.textBox1.BackColor = Color.DarkSeaGreen;
-            this.textBox1.BorderStyle = BorderStyle.None;
-            this.textBox1.Font = new Font("Microsoft Sans Serif", 8.25f, FontStyle.Bold, GraphicsUnit.Point, 0);
-            this.textBox1.ForeColor = Color.FromArgb(0, 64, 64);
-            this.textBox1.Location = new Point(361, 142);
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.Location = new System.Drawing.Point(722, 273);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new Size(94, 13);
+            this.textBox1.Size = new System.Drawing.Size(188, 25);
             this.textBox1.TabIndex = 50;
             this.textBox1.Text = "Version 2.0";
-            this.textBox1.TextAlign = HorizontalAlignment.Center;
-            this.groupBox1.Location = new Point(1, 156);
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(2, 300);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new Size(476, 10);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox1.Size = new System.Drawing.Size(952, 19);
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
-            this.keyboardcontrol1.KeyboardType = BoW.Alphabetical;
-            this.keyboardcontrol1.Location = new Point(-1, 165);
-            this.keyboardcontrol1.Margin = new Padding(4);
+            // 
+            // keyboardcontrol1
+            // 
+            this.keyboardcontrol1.KeyboardType = KeyboardClassLibrary.BoW.Alphabetical;
+            this.keyboardcontrol1.Location = new System.Drawing.Point(-2, 317);
+            this.keyboardcontrol1.Margin = new System.Windows.Forms.Padding(8);
             this.keyboardcontrol1.Name = "keyboardcontrol1";
-            this.keyboardcontrol1.Size = new Size(580, 158);
+            this.keyboardcontrol1.Size = new System.Drawing.Size(1160, 304);
             this.keyboardcontrol1.TabIndex = 54;
-            this.keyboardcontrol1.Load += this.keyboardcontrol1_Load;
-            this.keyboardcontrol1.UserKeyPressed += this.method_2;
-            this.pictureBox2.Image = (Image)componentResourceManager.GetObject("pictureBox2.Image");
-            this.pictureBox2.Location = new Point(5, 22);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(10, 42);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new Size(81, 89);
-            this.pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(162, 171);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 55;
             this.pictureBox2.TabStop = false;
-            base.AutoScaleDimensions = new SizeF(6f, 13f);
-            base.AutoScaleMode = AutoScaleMode.Font;
-            this.BackColor = Color.DarkSeaGreen;
-            base.ClientSize = new Size(476, 292);
-            base.Controls.Add(this.pictureBox2);
-            base.Controls.Add(this.keyboardcontrol1);
-            base.Controls.Add(this.textBox1);
-            base.Controls.Add(this.textBox2);
-            base.Controls.Add(this.groupBox1);
-            base.Controls.Add(this.btlKeyboad);
-            base.Controls.Add(this.picHide);
-            base.Controls.Add(this.picUnHide);
-            base.Controls.Add(this.comboBox_0);
-            base.Controls.Add(this.cmdExit);
-            base.Controls.Add(this.txtUSB);
-            base.Controls.Add(this.txtKeys);
-            base.Controls.Add(this.grpLogin);
-            base.Controls.Add(this.grpDoiMK);
-            this.ForeColor = Color.Black;
-            base.FormBorderStyle = FormBorderStyle.FixedSingle;
-            base.Icon = (Icon)componentResourceManager.GetObject("$this.Icon");
-            base.MaximizeBox = false;
-            base.MinimizeBox = false;
-            base.Name = "frmLogins";
-            base.StartPosition = FormStartPosition.CenterScreen;
+            // 
+            // frmLogins
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(952, 562);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.keyboardcontrol1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btlKeyboad);
+            this.Controls.Add(this.picHide);
+            this.Controls.Add(this.picUnHide);
+            this.Controls.Add(this.comboBox_0);
+            this.Controls.Add(this.cmdExit);
+            this.Controls.Add(this.txtUSB);
+            this.Controls.Add(this.txtKeys);
+            this.Controls.Add(this.grpLogin);
+            this.Controls.Add(this.grpDoiMK);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "frmLogins";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "USB-AT (2.01.04)";
-            base.Load += this.frmLogins_Load;
+            this.Load += new System.EventHandler(this.frmLogins_Load);
             this.grpLogin.ResumeLayout(false);
             this.grpLogin.PerformLayout();
             this.grpDoiMK.ResumeLayout(false);
             this.grpDoiMK.PerformLayout();
-            ((ISupportInitialize)this.picUnHide).EndInit();
-            ((ISupportInitialize)this.picHide).EndInit();
-            ((ISupportInitialize)this.pictureBox2).EndInit();
-            base.ResumeLayout(false);
-            base.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picUnHide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         // Token: 0x040000C0 RID: 192
